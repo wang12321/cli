@@ -1,0 +1,21 @@
+{
+  "name": "{{name}}",
+  "sideEffects": [
+    "*.css",
+    "node_modules/**/*"
+  ],
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "index": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "cross-env NODE_ENV='production' webpack --config build/webpack.pro.config.js --mode production",
+    "dev": "cross-env NODE_ENV='development' webpack-dev-server --open --config build/webpack.dev.config.js --mode development"
+  },
+  "keywords": [
+    "webpack",
+    "cli"
+  ],
+  "author": "{{author}}",
+  "license": "ISC",
+  }
